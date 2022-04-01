@@ -1,17 +1,23 @@
-<template>
+<template style="margin: 0px;">
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <Disclaimer />
+    <Timeline />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Disclaimer from './components/Disclaimer.vue'
+import Header from './components/Header.vue'
+import Timeline from './components/Timeline.vue'
+import 'vue-js-modal/dist/styles.css'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Timeline,
+    Header,
+    Disclaimer,
   }
 }
 </script>
@@ -23,6 +29,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: -4em;
 }
 </style>
